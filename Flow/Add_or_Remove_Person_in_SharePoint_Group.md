@@ -1,4 +1,4 @@
-#Add Person
+## Add Person
 
 Use HTTP Request to SharePoint Action
 
@@ -24,7 +24,7 @@ Body
 
 
 
-#Remove Person
+## Remove Person
 
 Use HTTP Request to SharePoint Action
 
