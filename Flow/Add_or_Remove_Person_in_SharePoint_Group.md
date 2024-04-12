@@ -2,10 +2,15 @@
 
 Use HTTP Request to SharePoint Action
 
+How to get "GroupId" of SharePoint Group.
+1. Go to the group page in Site Permission page
+2. Look at the URL on the web browser
+3. https://URL.sharepoint.com/sites/siteaddress/_layouts/15/people.aspx?MembershipGroupId=4826 => 4826 is this group's Id
+
 ```
 Method: POST
 
-_api/web/sitegroups/GetById(14)/users
+_api/web/sitegroups/GetById(GroupId)/users
 
 Headers
 {
@@ -26,7 +31,7 @@ Use HTTP Request to SharePoint Action
 ```
 Method: POST
 
-_api/web/sitegroups/GetById(14)/users/getbyemail('UserEmail')
+_api/web/sitegroups/GetById(GroupId)/users/getbyemail('UserEmail')
 
 Headers
 {
